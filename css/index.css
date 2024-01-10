@@ -1,0 +1,86 @@
+html {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    display: block;
+    height: 100%;
+    background-color: brown;
+    margin:0 auto;
+}
+
+nav > a {
+    display: inline-block;
+    text-align: center;
+    color: azure;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-top: 1rem;
+    width: 7rem;
+    height: auto;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding-top: 4rem;
+    padding-left: 2rem;
+}
+
+label {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+p {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, select {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    height: 2rem;
+}
+
+button {
+    font-size: xx-large;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+img {
+    max-width: 20rem;
+}
+
+.error {
+    color: red;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}

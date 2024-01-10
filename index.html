@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="./js/main.js"></script>
+	<link rel="stylesheet" href="./css/index.css">
+
+	<title>Virtual Fridge</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#info">About</a>
+			<a href="#add">Food</a>
+			<a href="#fridge">Fridge</a>
+		</nav>
+	</header>
+	<main>
+		<section id="info" class="info">
+			<h1>About</h1>
+			<p>Add food to your own virtual fridge!</p>
+			<p>And then check what is inside of the fridge.</p>
+			<img src="./img/apple.png" />
+		</section>
+
+		<section id="add">
+			<h1>Add food</h1>
+
+			<form method="POST">
+				<label>Food name *</label>
+				<input name="foodname" id="foodname"/>
+				<div id="error-food-name" class="error"></div>
+
+				<label>Food description</label>
+				<input name="description" id="description"/>
+				<div id="error-description" class="error"></div>
+
+				<label>Calories *</label>
+				<input name="calories" type="number" id="calories"/>
+				<div id="error-calories" class="error"></div>
+
+				<label>Vegan *</label>
+				<select name="vegan" id="vegan">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</select>
+				<div id="error-vegan" class="error"></div>
+
+				<button type="submit" id="submit">Add food</button>
+			</form>
+
+			<div id="effect">
+				
+			</div>
+		</section>
+
+		<section id="fridge">
+			<h1>Fridge</h1>
+			<h2>See whats in the fridge. Green = vegan, Blue = not</h2>
+			<canvas id="canvas" width="500px" height="700px"></canvas>
+			<button id="calculate">Peek inside</button>
+		</section>
+	</main>
+</body>
+</html>
